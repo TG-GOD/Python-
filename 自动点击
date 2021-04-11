@@ -1,0 +1,7 @@
+import pyautogui
+import time
+time.sleep(5)
+while 1:
+  pyautogui.click(1405, 42, clicks=1, interval=0.0, button='left')
+  pyautogui.click(83, 438, clicks=1, interval=0.0, button='left')
+  time.sleep(1)
