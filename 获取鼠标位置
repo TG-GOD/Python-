@@ -1,0 +1,19 @@
+
+import pyautogui
+ 
+ 
+def get_cord_real_time():
+    """get mouse coordinate in real time"""
+    print('mouse coordinate now: ')
+    try:
+        while 1:
+            x, y = pyautogui.position()
+            print_position = f'X: {str(x).rjust(5)}, Y: {str(y).rjust(5)}'
+            print(f"\r{print_position}", end='', flush=True)
+    except KeyboardInterrupt:
+        print('\n')
+ 
+ 
+if __name__ == '__main__':
+    get_cord_real_time()
+print(flush=True)
